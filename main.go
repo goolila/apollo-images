@@ -65,11 +65,24 @@ func worker(queue chan string, worknumber int, mID string) {
 	}
 }
 
+func validateMission(mission int) {
+    switch m := mission; {
+	case m < 11:
+		log.Fatalf("Apollo 11 was the spaceflight that first landed humans on the Moon")
+	case m > 17:
+		log.Fatalf("Apollo 17 (December 7–19, 1972) was the final mission of NASA's Apollo program.\n")
+	default:
+		log.Printf("It was so much fun: https://en.wikipedia.org/wiki/Apollo_%d", mission)
+    }
+}
+
 func main() {
 	var output = flag.String("output", "/tmp", "output outputDir to save photos on")
 	var mission = flag.Int("mission", 11, "number of apollo mission" )
 	var onlyHR = flag.Bool("hr", true, "download only high res photos")
 	flag.Parse()
+
+	validateMission(*mission)
 
 	outputDir = *output
 	missionID := strconv.Itoa(*mission)
