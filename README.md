@@ -28,11 +28,11 @@ Usage of ./apollo-images:
 
 Example:
 ```
-$ ./apollo-images -mission 12 -sleep 500
-🚀 It was so much fun: https://en.wikipedia.org/wiki/Apollo_11Visiting https://www.hq.nasa.gov/alsj/a11/images11.html
-[worker 1] downloading  https://www.hq.nasa.gov/alsj/a11/a11LunOrb5076HR.jpg to /tmp/apollo-images/11/a11LunOrb5076HR.jpg
-[worker 2] downloading  https://www.hq.nasa.gov/alsj/a11/a11pan1040226combHR.jpg to /tmp/apollo-images/11/a11pan1040226combHR.jpg
-[worker 3] downloading  https://www.hq.nasa.gov/alsj/a11/a11pan1040226lftHR.jpg to /tmp/apollo-images/11/a11pan1040226lftHR.jpg
-[worker 0] downloading  https://www.hq.nasa.gov/alsj/a11/a11pan1040226rghtHR.jpg to /tmp/apollo-images/11/a11pan1040226rghtHR.jpg
-[worker 3] downloading  https://www.hq.nasa.gov/alsj/a11/a11pan1093226HR.jpg to /tmp/apollo-images/11/a11pan1093226HR.jpg
+$ ./apollo-images -mission 12 -sleep 750
+🚀 It was so much fun: https://en.wikipedia.org/wiki/Apollo_12
+Visiting https://www.hq.nasa.gov/alsj/a12/images12.html
+[worker 1] downloading  https://www.hq.nasa.gov/alsj/a12/ap12-S69-57076HR.jpg to /tmp/apollo-images/12/ap12-S69-57076HR.jpg
+[worker 0] downloading  https://www.hq.nasa.gov/alsj/a12/a12-lam7HR.jpg to /tmp/apollo-images/12/a12-lam7HR.jpg
+[worker 2] downloading  https://www.hq.nasa.gov/alsj/a12/a12-lse76gHRsite4actual.jpg to /tmp/apollo-images/12/a12-lse76gHRsite4actual.jpg
+[worker 3] downloading  https://www.hq.nasa.gov/alsj/a12/a12-lse730HR.jpg to /tmp/apollo-images/12/a12-lse730HR.jpg
 ```

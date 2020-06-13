@@ -78,13 +78,13 @@ func validateMission(mission int) {
 	case m > 17:
 		log.Fatalf("Apollo 17 (December 7–19, 1972) was the final mission of NASA's Apollo program.\n")
 	default:
-		fmt.Printf("🚀 It was so much fun: https://en.wikipedia.org/wiki/Apollo_%d", mission)
+		fmt.Printf("🚀 It was so much fun: https://en.wikipedia.org/wiki/Apollo_%d\n", mission)
 	}
 }
 
 func ensureDir(dir string) error {
 	if _, err := os.Stat(dir); os.IsNotExist(err) {
-		log.Printf("outputDir %s does not exist. it will be created.", dir)
+		log.Printf("outputDir %s does not exist. it will be created.\n", dir)
 		err = os.MkdirAll(dir, 755)
 		if err != nil {
 			return err
